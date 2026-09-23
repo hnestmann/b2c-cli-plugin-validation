@@ -1,0 +1,61 @@
+{
+  "name": "b2c-plugin-validation",
+  "version": "0.1.0",
+  "description": "B2C CLI plugin that validates site-import XML and Page Designer / content JSON",
+  "author": "hnestmann",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "skills"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hnestmann/b2c-cli-plugin-validation.git"
+  },
+  "oclif": {
+    "commands": {
+      "strategy": "pattern",
+      "target": "./dist/commands"
+    },
+    "topics": {
+      "validate": {
+        "description": "Validate B2C Commerce site-import XML and Page Designer JSON"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build",
+    "test": "node --import tsx ./node_modules/mocha/bin/mocha.js --extension ts 'test/**/*.test.ts'",
+    "test:agent": "node --import tsx ./node_modules/mocha/bin/mocha.js --extension ts --reporter min 'test/**/*.test.ts'"
+  },
+  "peerDependencies": {
+    "@oclif/core": "^4"
+  },
+  "dependencies": {
+    "@inquirer/search": "^3",
+    "@inquirer/select": "^4",
+    "@salesforce/b2c-tooling-sdk": "^2.0.0",
+    "glob": "^11",
+    "xmllint-wasm": "^5.1.0"
+  },
+  "devDependencies": {
+    "@oclif/core": "^4",
+    "@types/chai": "^5",
+    "@types/mocha": "^10",
+    "@types/node": "^22",
+    "chai": "^5",
+    "mocha": "^11",
+    "tsx": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "mocha": {
+    "timeout": 30000
+  }
+}

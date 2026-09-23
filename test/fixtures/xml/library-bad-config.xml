@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31">
+  <content content-id="hero-1">
+    <type>component.hero.banner</type>
+    <config>{ not json</config>
+  </content>
+</library>

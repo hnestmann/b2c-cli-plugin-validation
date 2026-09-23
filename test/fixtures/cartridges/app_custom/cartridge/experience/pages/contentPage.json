@@ -1,0 +1,14 @@
+{
+  "name": "Content Page",
+  "region_definitions": [
+    {"id": "main"}
+  ],
+  "attribute_definition_groups": [
+    {
+      "id": "seo",
+      "attribute_definitions": [
+        {"id": "title", "type": "string"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foo xmlns="http://example.com/not-b2c">
+  <bar/>
+</foo>

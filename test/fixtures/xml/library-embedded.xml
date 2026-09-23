@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31">
+  <content content-id="hero-1">
+    <type>component.hero.banner</type>
+    <config>{
+      "visibility": []
+    }</config>
+    <data xml:lang="x-default">{
+      "heading": "Hello"
+    }</data>
+  </content>
+  <content content-id="home">
+    <type>page.contentPage</type>
+    <config>{
+      "visibility": []
+    }</config>
+    <data xml:lang="x-default">{
+      "title": "Home"
+    }</data>
+    <content-links>
+      <content-link content-id="hero-1" type="page.contentPage.main"/>
+    </content-links>
+  </content>
+</library>

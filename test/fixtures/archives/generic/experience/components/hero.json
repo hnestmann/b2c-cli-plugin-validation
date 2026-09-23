@@ -1,0 +1,13 @@
+{
+  "name": "Hero",
+  "group": "storefront",
+  "region_definitions": [],
+  "attribute_definition_groups": [
+    {
+      "id": "settings",
+      "attribute_definitions": [
+        {"id": "heading", "type": "string"}
+      ]
+    }
+  ]
+}

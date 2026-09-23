@@ -1,0 +1,15 @@
+{
+  "name": "Hero",
+  "group": "storefront",
+  "region_definitions": [],
+  "attribute_definition_groups": [
+    {
+      "id": "settings",
+      "attribute_definitions": [
+        {"id": "heading", "type": "string"},
+        {"id": "enabled", "type": "boolean"},
+        {"id": "tone", "type": "enum", "values": ["light", "dark"]}
+      ]
+    }
+  ]
+}
